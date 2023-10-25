@@ -45,9 +45,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     }
 
     // Validación para el número de telefono
-    var phoneRegex = /^[0-9]{11}$/; // Asumiendo 11 digitos 
+    var phoneRegex = /^[0-9]{10}$/; // Asumiendo 10 digitos 
     if (!phoneRegex.test(phone)) {
-        alert('Por favor ingresá un número de teléfono de 11 digitos');
+        alert('Por favor ingresá un número de teléfono de 10 digitos');
         return;
     }
     // Validación de la dirección
